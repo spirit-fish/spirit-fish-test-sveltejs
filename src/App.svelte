@@ -1,16 +1,12 @@
 <script>
-	import GiphyImage from './GiphyImage.svelte'
-
+	import { Router, Route } from "svelte-routing";
+	import Home from './pages/home/Home.svelte'
 	export let name;
+	export let url = "";
 </script>
 
-<style>
-	h1 {
-		color: rgb(181, 95, 181);
-	}
-</style>
-
-<div class="appRoot">
-	<marquee><h1>Hello {name}!</h1></marquee>
-	<GiphyImage/>
-</div>
+<Router url="{url}">
+	<div class="appRoot">
+		<Route path="/"><Home name={name} /></Route>
+	</div>
+</Router>

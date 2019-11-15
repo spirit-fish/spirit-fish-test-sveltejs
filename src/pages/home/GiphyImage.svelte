@@ -1,5 +1,5 @@
 <script>
-  import giphyService from './giphyService'
+  import giphyService from '../../giphyService'
 
   let imageSource = null;
   setNewImageSource();
