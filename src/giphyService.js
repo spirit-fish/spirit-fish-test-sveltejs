@@ -9,7 +9,7 @@ const getTrendingImageUrl = function() {
     });
 }
 
-const randomUrl = "https://api.giphy.com/v1/gifs/random?api_key=5DYyxYScARZshsn38FrpiLbFGVFLHcrb&limit=1"
+const randomUrl = "https://api.giphy.com/v1/gifs/random?api_key=5DYyxYScARZshsn38FrpiLbFGVFLHcrb&limit=1&rating=g"
 const getRandomImageUrl = function() {
   return axios.get(randomUrl)
     .then(response => {
